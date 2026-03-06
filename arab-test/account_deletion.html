@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion - Arab tili test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border-left: 5px solid #0dcaf0;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .info-box h3 {
+            color: #055160;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .steps {
+            counter-reset: step-counter;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            position: relative;
+            padding-left: 70px;
+        }
+
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .contact-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: #667eea;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Orqaga</a>
+
+        <h1>Account Deletion</h1>
+        <p>Akkauntingizni o'chirishdan oldin quyidagi ma'lumotlarni o'qib chiqing.</p>
+
+        <div class="warning-box">
+            <h3>⚠️ Muhim ogohlantirish</h3>
+            <p>Akkauntingizni o'chirishdan oldin, bu harakatni ortga qaytarib bo'lmasligini unutmang. Barcha ma'lumotlaringiz butunlay o'chiriladi va qayta tiklab bo'lmaydi.</p>
+        </div>
+
+        <h2>O'chiriladigan ma'lumotlar:</h2>
+        <ul>
+            <li>Shaxsiy ma'lumotlaringiz (email, ism, profil rasmi)</li>
+            <li>Barcha test natijalari va statistikalar</li>
+            <li>Ball va yutuqlar</li>
+            <li>Reyting jadvali pozitsiyasi</li>
+            <li>Taraqqiyot ma'lumotlari</li>
+            <li>Ilova sozlamalari va afzalliklari</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>ℹ️ Ma'lumot</h3>
+            <p>Ba'zi ma'lumotlar (masalan, anonim statistik ma'lumotlar) qonuniy talablar yoki biznes maqsadlari uchun saqlanishi mumkin, lekin ular sizning shaxsingiz bilan bog'lanmaydi.</p>
+        </div>
+
+        <h2>Akkauntni o'chirish yo'llari:</h2>
+
+        <h3>Usul 1: Ilovadan o'chirish (Tavsiya etiladi)</h3>
+        <ol class="steps">
+            <li>Ilovani oching va profilingizga kiring</li>
+            <li>Sozlamalar (Settings) bo'limiga o'ting</li>
+            <li>"Account" yoki "Akkaunt sozlamalari" tugmasini bosing</li>
+            <li>"Delete Account" yoki "Akkauntni o'chirish" tugmasini toping va bosing</li>
+            <li>Tasdiqlash oynasida parolingizni kiriting</li>
+            <li>"Confirm Deletion" tugmasini bosing</li>
+        </ol>
+
+        <h3>Usul 2: Email orqali so'rov yuborish</h3>
+        <p>Agar ilovadan o'chira olmasangiz yoki muammolar bo'lsa, quyidagi ma'lumotlar bilan bizga email yuboring:</p>
+
+        <div class="contact-box">
+            <h3>Email manzil:</h3>
+            <p><a href="mailto:Uzbek0770oo@gmail.com">Uzbek0770oo@gmail.com</a></p>
+
+            <h3 style="margin-top: 20px;">Email matnida quyidagilarni ko'rsating:</h3>
+            <ul style="text-align: left; display: inline-block; margin-top: 15px;">
+                <li>Mavzu: "Account Deletion Request - Arab tili test"</li>
+                <li>Ro'yxatdan o'tgan email manzilingiz</li>
+                <li>Foydalanuvchi nomingiz (agar esda bo'lsa)</li>
+                <li>O'chirish sababini (ixtiyoriy)</li>
+            </ul>
+        </div>
+
+        <h2>O'chirish jarayoni:</h2>
+        <ul>
+            <li><strong>Darhol:</strong> Akkauntingiz tizimdan darhol o'chiriladi va ilovaga kira olmaysiz</li>
+            <li><strong>30 kun ichida:</strong> Barcha shaxsiy ma'lumotlaringiz serverlarimizdan butunlay o'chiriladi</li>
+            <li><strong>Zaxira nusxalar:</strong> Texnik zaxira nusxalaridagi ma'lumotlar 90 kungacha saqlanishi mumkin, keyin avtomatik o'chiriladi</li>
+        </ul>
+
+        <h2>O'chirishdan oldin:</h2>
+        <ul>
+            <li>Muhim ma'lumotlaringizni saqlang (screenshot olish orqali)</li>
+            <li>Eng yuqori natijalaringizni eslab qoling</li>
+            <li>Yutuqlar va sertifikatlarni saqlang (agar mavjud bo'lsa)</li>
+            <li>Premium obunani bekor qiling (agar mavjud bo'lsa)</li>
+        </ul>
+
+        <div class="warning-box">
+            <h3>📝 Eslatma</h3>
+            <p>Agar akkauntingizni o'chirishdan keyin qayta ro'yxatdan o'tmoqchi bo'lsangiz, yangi akkaunt yaratishingiz kerak bo'ladi va barcha ballaringiz va yutuqlaringiz noldan boshlanadi.</p>
+        </div>
+
+        <div class="contact-box" style="margin-top: 40px;">
+            <h3>Savollar bormi?</h3>
+            <p>Agar akkauntni o'chirish jarayonida muammolar yoki savollar bo'lsa, biz bilan bog'laning:</p>
+            <p style="margin-top: 10px;"><a href="mailto:Uzbek0770oo@gmail.com">Uzbek0770oo@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

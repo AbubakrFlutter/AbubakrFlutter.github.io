@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turk tilini o'rganish</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: #333;
+            padding: 20px;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: white;
+            color: #e74c3c;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .back-btn:hover {
+            opacity: 0.9;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 2em;
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .emoji {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: white;
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+
+        .download-btn {
+            display: block;
+            background: white;
+            color: #e74c3c;
+            padding: 18px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+        }
+
+        .coming-soon {
+            background: #ffc107;
+            color: #333;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-right: 15px;
+        }
+
+        .feature-text h3 {
+            color: #e74c3c;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .feature-text p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        .stat h2 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .stat p {
+            font-size: 0.9em;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .link-btn {
+            flex: 1;
+            padding: 15px;
+            background: #f8f9fa;
+            color: #e74c3c;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">← Orqaga</a>
+
+    <div class="emoji">🇹🇷</div>
+    <h1>Turk tilini o'rganish</h1>
+    <p class="subtitle">Zamonaviy va samarali usulda o'rganing!</p>
+
+    <div class="coming-soon">
+        🚀 Tez orada Google Play'da!
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>800+</h2>
+            <p>So'zlar</p>
+        </div>
+        <div class="stat">
+            <h2>40+</h2>
+            <p>Darslar</p>
+        </div>
+        <div class="stat">
+            <h2>Yangi</h2>
+            <p>Ilova</p>
+        </div>
+        <div class="stat">
+            <h2>🎯</h2>
+            <p>Takomillashmoqda</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="feature">
+            <div class="feature-icon">📚</div>
+            <div class="feature-text">
+                <h3>Darslar</h3>
+                <p>40+ interaktiv darslar</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🎴</div>
+            <div class="feature-text">
+                <h3>Flashcard</h3>
+                <p>800+ so'zni eslab qolish</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🔊</div>
+            <div class="feature-text">
+                <h3>Audio</h3>
+                <p>To'g'ri talaffuz eshiting</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">📝</div>
+            <div class="feature-text">
+                <h3>Testlar</h3>
+                <p>Bilimingizni sinab ko'ring</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">👨‍💼</div>
+            <div class="feature-text">
+                <h3>Admin Panel</h3>
+                <p>Darslarni boshqarish tizimi</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🔔</div>
+            <div class="feature-text">
+                <h3>Bildirishnomalar</h3>
+                <p>Yangiliklardan xabardor bo'ling</p>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="privacy_policy.html" class="link-btn">Privacy Policy</a>
+            <a href="account_deletion.html" class="link-btn">Delete Account</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 style="color: #e74c3c; text-align: center; margin-bottom: 15px;">Asosiy xususiyatlar</h2>
+        <ul style="line-height: 2; padding-left: 20px;">
+            <li>Ko'p tilli interfeys (O'zbek, Ingliz, Turk)</li>
+            <li>Offline rejimda ishlash imkoniyati</li>
+            <li>Taraqqiyotni kuzatish va statistika</li>
+            <li>Shaxsiylashtirilgan o'rganish rejasi</li>
+            <li>Kundalik takrorlar va eslatmalar</li>
+            <li>Yutuqlar va mukofotlar tizimi</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Turk tilini o'rganish</p>
+        <p>Barcha huquqlar himoyalangan</p>
+    </footer>
+</body>
+</html>
