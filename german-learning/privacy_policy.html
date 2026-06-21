@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Nemis Tili</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #CC0000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #CC0000;
+        }
+
+        .header h1 {
+            color: #CC0000;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .language-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .tab-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .tab-button.active {
+            background-color: #CC0000;
+            color: white;
+            border-color: #CC0000;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #CC0000;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        h4 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        a {
+            color: #CC0000;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #FFCE00;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .tab-button {
+                flex: 1;
+                min-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Orqaga</a>
+
+        <div class="header">
+            <h1>🇩🇪 Privacy Policy</h1>
+            <p class="subtitle">Nemis Tili — German Learning App</p>
+            <p class="subtitle"><strong>Last Updated:</strong> June 21, 2026</p>
+        </div>
+
+        <div class="language-tabs">
+            <button class="tab-button active" onclick="showLanguage('english', event)">🇬🇧 English</button>
+            <button class="tab-button" onclick="showLanguage('uzbek', event)">🇺🇿 O'zbekcha</button>
+            <button class="tab-button" onclick="showLanguage('german', event)">🇩🇪 Deutsch</button>
+        </div>
+
+        <!-- English Version -->
+        <div id="english" class="content-section active">
+            <h2>Introduction</h2>
+            <p>Welcome to <strong>Nemis Tili</strong> (German Learning App). We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Personal Information</h3>
+            <p>When you register and use our app, we collect:</p>
+            <ul>
+                <li><strong>Email address:</strong> Used for account creation and authentication</li>
+                <li><strong>Display name:</strong> Optional, used for personalization</li>
+                <li><strong>User ID:</strong> Automatically generated for account management</li>
+            </ul>
+
+            <h3>1.2 Usage Data</h3>
+            <p>We automatically collect:</p>
+            <ul>
+                <li><strong>Learning progress:</strong> Lesson completion, quiz scores, and achievements</li>
+                <li><strong>App usage statistics:</strong> Features used, time spent in the app</li>
+                <li><strong>Device information:</strong> Device model, operating system version, unique device identifiers</li>
+                <li><strong>Performance data:</strong> App crashes, errors, and diagnostic information</li>
+            </ul>
+
+            <h3>1.3 Data We DO NOT Collect</h3>
+            <ul>
+                <li>❌ We do NOT collect your location data</li>
+                <li>❌ We do NOT access your camera or microphone</li>
+                <li>❌ We do NOT collect sensitive personal information</li>
+                <li>❌ We do NOT track your browsing history outside the app</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the collected information for:</p>
+            <ul>
+                <li><strong>Account management:</strong> Creating and maintaining your user account</li>
+                <li><strong>Personalization:</strong> Providing personalized learning experience and tracking your progress</li>
+                <li><strong>Communication:</strong> Sending in-app notifications about app updates and new content</li>
+                <li><strong>Analytics:</strong> Understanding how users interact with the app to improve features</li>
+                <li><strong>Security:</strong> Detecting and preventing fraudulent activities</li>
+                <li><strong>Advertising:</strong> Displaying relevant ads (see Section 4)</li>
+            </ul>
+
+            <h2>3. Data Storage and Security</h2>
+
+            <h3>3.1 Storage</h3>
+            <ul>
+                <li>All user data is securely stored in <strong>Firebase Firestore</strong> (Google Cloud)</li>
+                <li>Data is stored in encrypted format during transmission and at rest</li>
+                <li>We retain your data as long as your account is active</li>
+            </ul>
+
+            <h3>3.2 Security Measures</h3>
+            <ul>
+                <li>Industry-standard encryption (SSL/TLS)</li>
+                <li>Secure authentication through Firebase Authentication</li>
+                <li>Regular security audits and updates</li>
+                <li>Access controls and authentication requirements</li>
+            </ul>
+
+            <h2>4. Third-Party Services</h2>
+            <p>Our app uses the following third-party services:</p>
+
+            <h3>4.1 Firebase (Google)</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Authentication, database, and analytics</li>
+                <li><strong>Data collected:</strong> Email, user ID, app usage data</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>4.2 Google Mobile Ads (AdMob)</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Displaying advertisements</li>
+                <li><strong>Data collected:</strong> Advertising ID, device information, ad interaction data</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Note:</strong> Ads may be personalized based on your interests. You can opt-out of personalized ads in your device settings.
+            </div>
+
+            <h2>5. Your Rights and Choices</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of your personal data</li>
+                <li><strong>Correction:</strong> Update or correct your information in the app settings</li>
+                <li><strong>Deletion:</strong> Request deletion of your account and associated data</li>
+                <li><strong>Opt-out:</strong> Disable personalized ads in your device settings</li>
+                <li><strong>Data portability:</strong> Request your data in a portable format</li>
+            </ul>
+            <p>To exercise these rights, contact us at the email provided below.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>Our app is designed for users aged <strong>13 and above</strong>. We do not knowingly collect personal information from children under 13. If you believe we have collected data from a child under 13, please contact us immediately, and we will delete it.</p>
+
+            <h2>7. Data Retention</h2>
+            <ul>
+                <li><strong>Active accounts:</strong> We retain your data while your account is active</li>
+                <li><strong>Inactive accounts:</strong> Data may be deleted after 2 years of inactivity</li>
+                <li><strong>Deleted accounts:</strong> Data is permanently deleted within 30 days of account deletion request</li>
+            </ul>
+
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>We may update this privacy policy from time to time. We will notify you of significant changes through:</p>
+            <ul>
+                <li>In-app notifications</li>
+                <li>Email (if provided)</li>
+                <li>Updated "Last Updated" date at the top of this policy</li>
+            </ul>
+
+            <h2>9. Contact Us</h2>
+            <p>If you have questions about this privacy policy or your data, contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> mamurovmubashir9@gmail.com</li>
+                <li><strong>App Name:</strong> Nemis Tili</li>
+                <li><strong>Developer:</strong> Abubakr Flutter</li>
+            </ul>
+        </div>
+
+        <!-- Uzbek Version -->
+        <div id="uzbek" class="content-section">
+            <h2>Kirish</h2>
+            <p><strong>Nemis Tili</strong> (Nemis tilini o'rganish) ilovasiga xush kelibsiz. Biz sizning maxfiyligingizni hurmat qilamiz va shaxsiy ma'lumotlaringizni himoya qilishga sodiqmiz. Ushbu maxfiylik siyosati mobil ilovamizdan foydalanganingizda ma'lumotlaringizni qanday yig'ishimiz, ishlatishimiz va himoya qilishimizni tushuntiradi.</p>
+
+            <h2>1. Yig'iladigan Ma'lumotlar</h2>
+
+            <h3>1.1 Shaxsiy Ma'lumotlar</h3>
+            <p>Ro'yxatdan o'tganingizda va ilovamizdan foydalanganingizda biz yig'amiz:</p>
+            <ul>
+                <li><strong>Email manzili:</strong> Hisob yaratish va autentifikatsiya uchun</li>
+                <li><strong>Ism:</strong> Ixtiyoriy, shaxsiylashtirish uchun</li>
+                <li><strong>Foydalanuvchi ID:</strong> Hisob boshqaruvi uchun avtomatik yaratiladi</li>
+            </ul>
+
+            <h3>1.2 Foydalanish Ma'lumotlari</h3>
+            <p>Avtomatik yig'iladigan ma'lumotlar:</p>
+            <ul>
+                <li><strong>O'rganish jarayoni:</strong> Darslar, test natijalari, yutuqlar</li>
+                <li><strong>Ilova statistikasi:</strong> Ishlatilgan funksiyalar, ilovada o'tkazilgan vaqt</li>
+                <li><strong>Qurilma ma'lumotlari:</strong> Qurilma modeli, operatsion tizim versiyasi</li>
+                <li><strong>Ishlash ma'lumotlari:</strong> Xatolar, nosozliklar, diagnostika ma'lumotlari</li>
+            </ul>
+
+            <h3>1.3 Yig'ilMAYdigan Ma'lumotlar</h3>
+            <ul>
+                <li>❌ Joylashuv ma'lumotlari yig'ilmaydi</li>
+                <li>❌ Kamera yoki mikrofonga kirish yo'q</li>
+                <li>❌ Maxfiy shaxsiy ma'lumotlar yig'ilmaydi</li>
+                <li>❌ Ilova tashqarisidagi harakatlaringiz kuzatilmaydi</li>
+            </ul>
+
+            <h2>2. Ma'lumotlardan Foydalanish</h2>
+            <p>Yig'ilgan ma'lumotlar quyidagilar uchun ishlatiladi:</p>
+            <ul>
+                <li><strong>Hisob boshqaruvi:</strong> Foydalanuvchi hisobini yaratish va saqlash</li>
+                <li><strong>Shaxsiylashtirish:</strong> Individual o'quv tajribasi va jarayonni kuzatish</li>
+                <li><strong>Xabarlar:</strong> Yangilanishlar va yangi kontent haqida bildirish</li>
+                <li><strong>Tahlil:</strong> Foydalanuvchilar ilovadan qanday foydalanishini o'rganish</li>
+                <li><strong>Xavfsizlik:</strong> Firibgarlik harakatlarini aniqlash va oldini olish</li>
+                <li><strong>Reklama:</strong> Tegishli reklamalarni ko'rsatish (4-bo'limga qarang)</li>
+            </ul>
+
+            <h2>3. Ma'lumotlarni Saqlash va Xavfsizlik</h2>
+
+            <h3>3.1 Saqlash</h3>
+            <ul>
+                <li>Barcha foydalanuvchi ma'lumotlari <strong>Firebase Firestore</strong> (Google Cloud) da xavfsiz saqlanadi</li>
+                <li>Ma'lumotlar uzatish va saqlash vaqtida shifrlangan formatda</li>
+                <li>Ma'lumotlar hisobingiz faol bo'lgancha saqlanadi</li>
+            </ul>
+
+            <h3>3.2 Xavfsizlik Choralari</h3>
+            <ul>
+                <li>Sanoat standarti shifrlash (SSL/TLS)</li>
+                <li>Firebase Authentication orqali xavfsiz autentifikatsiya</li>
+                <li>Muntazam xavfsizlik tekshiruvlari va yangilanishlar</li>
+                <li>Kirish nazorati va autentifikatsiya talablari</li>
+            </ul>
+
+            <h2>4. Uchinchi Tomon Xizmatlari</h2>
+            <p>Ilovamiz quyidagi uchinchi tomon xizmatlaridan foydalanadi:</p>
+
+            <h3>4.1 Firebase (Google)</h3>
+            <ul>
+                <li><strong>Maqsad:</strong> Autentifikatsiya, ma'lumotlar bazasi, tahlil</li>
+                <li><strong>Yig'iladigan ma'lumotlar:</strong> Email, foydalanuvchi ID, ilova foydalanish ma'lumotlari</li>
+                <li><strong>Maxfiylik siyosati:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>4.2 Google Mobile Ads (AdMob)</h3>
+            <ul>
+                <li><strong>Maqsad:</strong> Reklamalarni ko'rsatish</li>
+                <li><strong>Yig'iladigan ma'lumotlar:</strong> Reklama ID, qurilma ma'lumotlari, reklama bilan o'zaro ta'sir</li>
+                <li><strong>Maxfiylik siyosati:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Eslatma:</strong> Reklamalar sizning qiziqishlaringizga asoslangan bo'lishi mumkin. Qurilma sozlamalarida shaxsiylashtirilgan reklamalardan voz kechishingiz mumkin.
+            </div>
+
+            <h2>5. Sizning Huquqlaringiz</h2>
+            <p>Sizda quyidagi huquqlar bor:</p>
+            <ul>
+                <li><strong>Kirish:</strong> Shaxsiy ma'lumotlaringiz nusxasini so'rash</li>
+                <li><strong>To'g'rilash:</strong> Ma'lumotlarni sozlamalarda yangilash yoki to'g'rilash</li>
+                <li><strong>O'chirish:</strong> Hisobingiz va ma'lumotlaringizni o'chirish so'rovi</li>
+                <li><strong>Rad etish:</strong> Qurilma sozlamalarida shaxsiylashtirilgan reklamalarni o'chirish</li>
+                <li><strong>Ma'lumot ko'chirish:</strong> Ma'lumotlaringizni ko'chiriladigan formatda so'rash</li>
+            </ul>
+            <p>Ushbu huquqlardan foydalanish uchun quyida ko'rsatilgan email orqali biz bilan bog'laning.</p>
+
+            <h2>6. Bolalar Maxfiyligi</h2>
+            <p>Ilovamiz <strong>13 yoshdan katta</strong> foydalanuvchilar uchun mo'ljallangan. Biz 13 yoshdan kichik bolalardan shaxsiy ma'lumot yig'maymiz. Agar 13 yoshdan kichik boladan ma'lumot yig'ilgan deb hisoblasangiz, darhol biz bilan bog'laning va biz uni o'chiramiz.</p>
+
+            <h2>7. Ma'lumotlarni Saqlash Muddati</h2>
+            <ul>
+                <li><strong>Faol hisoblar:</strong> Hisobingiz faol bo'lgancha saqlanadi</li>
+                <li><strong>Faol bo'lmagan hisoblar:</strong> 2 yil faoliyat bo'lmasa o'chirilishi mumkin</li>
+                <li><strong>O'chirilgan hisoblar:</strong> O'chirish so'rovidan keyin 30 kun ichida butunlay o'chiriladi</li>
+            </ul>
+
+            <h2>8. Maxfiylik Siyosatidagi O'zgarishlar</h2>
+            <p>Vaqti-vaqti bilan ushbu maxfiylik siyosatini yangilashimiz mumkin. Muhim o'zgarishlar haqida sizga quyidagilar orqali xabar beramiz:</p>
+            <ul>
+                <li>Ilova ichidagi xabarlar</li>
+                <li>Email (agar berilgan bo'lsa)</li>
+                <li>Yuqoridagi "Oxirgi yangilanish" sanasini yangilash</li>
+            </ul>
+
+            <h2>9. Biz Bilan Bog'lanish</h2>
+            <p>Ushbu maxfiylik siyosati yoki ma'lumotlaringiz haqida savollaringiz bo'lsa, biz bilan bog'laning:</p>
+            <ul>
+                <li><strong>Email:</strong> mamurovmubashir9@gmail.com</li>
+                <li><strong>Ilova nomi:</strong> Nemis Tili</li>
+                <li><strong>Ishlab chiquvchi:</strong> Abubakr Flutter</li>
+            </ul>
+        </div>
+
+        <!-- German Version -->
+        <div id="german" class="content-section">
+            <h2>Einleitung</h2>
+            <p>Willkommen bei <strong>Nemis Tili</strong> (Deutsch Lernen App). Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre persönlichen Daten zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Daten erfassen, verwenden und schützen, wenn Sie unsere mobile Anwendung nutzen.</p>
+
+            <h2>1. Daten, die wir erfassen</h2>
+
+            <h3>1.1 Persönliche Daten</h3>
+            <p>Wenn Sie sich registrieren und unsere App nutzen, erfassen wir:</p>
+            <ul>
+                <li><strong>E-Mail-Adresse:</strong> Zur Kontoerstellung und Authentifizierung</li>
+                <li><strong>Anzeigename:</strong> Optional, zur Personalisierung</li>
+                <li><strong>Benutzer-ID:</strong> Automatisch generiert für die Kontoverwaltung</li>
+            </ul>
+
+            <h3>1.2 Nutzungsdaten</h3>
+            <p>Wir erfassen automatisch:</p>
+            <ul>
+                <li><strong>Lernfortschritt:</strong> Abschluss von Lektionen, Quiz-Ergebnisse und Erfolge</li>
+                <li><strong>App-Nutzungsstatistiken:</strong> Verwendete Funktionen, in der App verbrachte Zeit</li>
+                <li><strong>Geräteinformationen:</strong> Gerätemodell, Betriebssystemversion, eindeutige Gerätekennungen</li>
+                <li><strong>Leistungsdaten:</strong> App-Abstürze, Fehler und Diagnoseinformationen</li>
+            </ul>
+
+            <h3>1.3 Daten, die wir NICHT erfassen</h3>
+            <ul>
+                <li>❌ Wir erfassen KEINE Standortdaten</li>
+                <li>❌ Wir greifen NICHT auf Ihre Kamera oder Ihr Mikrofon zu</li>
+                <li>❌ Wir erfassen KEINE sensiblen persönlichen Daten</li>
+                <li>❌ Wir verfolgen NICHT Ihren Browserverlauf außerhalb der App</li>
+            </ul>
+
+            <h2>2. Wie wir Ihre Daten verwenden</h2>
+            <p>Wir verwenden die gesammelten Daten für:</p>
+            <ul>
+                <li><strong>Kontoverwaltung:</strong> Erstellung und Pflege Ihres Benutzerkontos</li>
+                <li><strong>Personalisierung:</strong> Personalisiertes Lernerlebnis und Fortschrittsverfolgung</li>
+                <li><strong>Kommunikation:</strong> In-App-Benachrichtigungen über App-Updates und neue Inhalte</li>
+                <li><strong>Analyse:</strong> Verstehen, wie Benutzer mit der App interagieren</li>
+                <li><strong>Sicherheit:</strong> Erkennung und Verhinderung betrügerischer Aktivitäten</li>
+                <li><strong>Werbung:</strong> Anzeige relevanter Werbung (siehe Abschnitt 4)</li>
+            </ul>
+
+            <h2>3. Datenspeicherung und Sicherheit</h2>
+
+            <h3>3.1 Speicherung</h3>
+            <ul>
+                <li>Alle Benutzerdaten werden sicher in <strong>Firebase Firestore</strong> (Google Cloud) gespeichert</li>
+                <li>Daten werden während der Übertragung und im Ruhezustand verschlüsselt</li>
+                <li>Wir bewahren Ihre Daten auf, solange Ihr Konto aktiv ist</li>
+            </ul>
+
+            <h3>3.2 Sicherheitsmaßnahmen</h3>
+            <ul>
+                <li>Branchenübliche Verschlüsselung (SSL/TLS)</li>
+                <li>Sichere Authentifizierung über Firebase Authentication</li>
+                <li>Regelmäßige Sicherheitsaudits und -updates</li>
+                <li>Zugriffskontrollen und Authentifizierungsanforderungen</li>
+            </ul>
+
+            <h2>4. Drittanbieterdienste</h2>
+            <p>Unsere App verwendet folgende Drittanbieterdienste:</p>
+
+            <h3>4.1 Firebase (Google)</h3>
+            <ul>
+                <li><strong>Zweck:</strong> Authentifizierung, Datenbank und Analysen</li>
+                <li><strong>Erfasste Daten:</strong> E-Mail, Benutzer-ID, App-Nutzungsdaten</li>
+                <li><strong>Datenschutzrichtlinie:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>4.2 Google Mobile Ads (AdMob)</h3>
+            <ul>
+                <li><strong>Zweck:</strong> Anzeige von Werbung</li>
+                <li><strong>Erfasste Daten:</strong> Werbe-ID, Geräteinformationen, Anzeigeninteraktionsdaten</li>
+                <li><strong>Datenschutzrichtlinie:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Hinweis:</strong> Werbung kann basierend auf Ihren Interessen personalisiert werden. Sie können personalisierte Werbung in Ihren Geräteeinstellungen deaktivieren.
+            </div>
+
+            <h2>5. Ihre Rechte</h2>
+            <p>Sie haben das Recht auf:</p>
+            <ul>
+                <li><strong>Zugang:</strong> Anforderung einer Kopie Ihrer persönlichen Daten</li>
+                <li><strong>Berichtigung:</strong> Aktualisierung oder Korrektur Ihrer Daten in den App-Einstellungen</li>
+                <li><strong>Löschung:</strong> Anforderung der Löschung Ihres Kontos und der zugehörigen Daten</li>
+                <li><strong>Widerspruch:</strong> Deaktivierung personalisierter Werbung in den Geräteeinstellungen</li>
+                <li><strong>Datenübertragbarkeit:</strong> Anforderung Ihrer Daten in einem portablen Format</li>
+            </ul>
+            <p>Um diese Rechte auszuüben, kontaktieren Sie uns unter der unten angegebenen E-Mail-Adresse.</p>
+
+            <h2>6. Datenschutz für Kinder</h2>
+            <p>Unsere App ist für Benutzer ab <strong>13 Jahren</strong> konzipiert. Wir sammeln wissentlich keine persönlichen Daten von Kindern unter 13 Jahren. Wenn Sie glauben, dass wir Daten von einem Kind unter 13 Jahren gesammelt haben, kontaktieren Sie uns bitte sofort, und wir werden sie löschen.</p>
+
+            <h2>7. Datenspeicherdauer</h2>
+            <ul>
+                <li><strong>Aktive Konten:</strong> Wir bewahren Ihre Daten auf, solange Ihr Konto aktiv ist</li>
+                <li><strong>Inaktive Konten:</strong> Daten können nach 2 Jahren Inaktivität gelöscht werden</li>
+                <li><strong>Gelöschte Konten:</strong> Daten werden innerhalb von 30 Tagen nach der Löschanfrage dauerhaft gelöscht</li>
+            </ul>
+
+            <h2>8. Änderungen dieser Datenschutzrichtlinie</h2>
+            <p>Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über wesentliche Änderungen informieren durch:</p>
+            <ul>
+                <li>In-App-Benachrichtigungen</li>
+                <li>E-Mail (falls angegeben)</li>
+                <li>Aktualisiertes "Zuletzt aktualisiert"-Datum am Anfang dieser Richtlinie</li>
+            </ul>
+
+            <h2>9. Kontakt</h2>
+            <p>Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder Ihren Daten haben, kontaktieren Sie uns:</p>
+            <ul>
+                <li><strong>E-Mail:</strong> mamurovmubashir9@gmail.com</li>
+                <li><strong>App-Name:</strong> Nemis Tili</li>
+                <li><strong>Entwickler:</strong> Abubakr Flutter</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Nemis Tili</strong> — German Learning Application</p>
+            <p>This privacy policy is effective as of the date stated above.</p>
+            <p>© 2026. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language, event) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            document.getElementById(language).classList.add('active');
+
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            event.target.classList.add('active');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
